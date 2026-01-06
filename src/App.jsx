@@ -53,7 +53,8 @@ const App = () => {
                     currentItem={currentItem}
                     setCurrentItem={setCurrentItem}
                 />
-                {jobs.length > 1 && (
+                {jobs.length === 0 && <h2>No jobs found</h2>}
+                {jobs.length > 0 && (
                     <JobInfo jobs={jobs} currentItem={currentItem} />
                 )}
             </section>

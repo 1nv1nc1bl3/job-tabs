@@ -7,7 +7,7 @@ export default function BtnContainer({ jobs, currentItem, setCurrentItem }) {
                         onClick={() => setCurrentItem(index)}
                         key={item.id}
                         className={`job-btn ${
-                            index === currentItem ? 'active-class' : ''
+                            index === currentItem ? 'active-btn' : ''
                         }`}
                     >
                         {item.company}
